@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30" />
+    <link rel="stylesheet" type="text/css" media="screen" href="static/style.css">
+    <title>Monitoring Umetnici</title>
+   
+</head>
+<body>
+
+
+   
+                <table border="1">
+                    <thead>
+                        <tr>
+                           
+                            <th>Naizv</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                        
+                    <tbody>
+                        {% for  i,j in status.items() %}
+                        <tr>
+                          
+                            <td>{{i}}</td>
+                            <td>{{j}}</td>
+                        </tr>  
+                        {% endfor %}                                                
+                    </tbody>
+                        
+                </table>
+
+</body>
+
+
+</html>
