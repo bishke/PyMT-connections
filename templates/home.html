@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="30" />
     <link rel="stylesheet" type="text/css" media="screen" href="/static/css/style.css">
-    <title>Monitoring Umetnici</title>
+    <title>Master 4.0 - monitoring</title>
     <style>
         #aktivna {background-color: aqua;}
         #neaktivna {background-color:rgb(255, 76, 6);}
     </style>
 </head>
 <body>
-
+<div >
+    <h1 style="text-align: center;">Master 4.0 - zauzetost radnih stanica</h1>
+</div>
     <table id="adrese">
         <thead>
             <tr>
-               
-                <th>Naziv</th>
+                <th>Radna stanica</th>
+                <th>Adresa i port</th>
                 <th>Status</th>
             </tr>
         </thead>
@@ -25,8 +27,8 @@
         <tbody>
             
             <tr>
-              
-                <td>147.91.200.59:4001</td>
+                <td>Radna stanica 1</td>
+                <td>master4ws.unic.kg.ac.rs:4001</td>
                 {% if status['147.91.200.59:4001']=="aktivna"%}
                 <td id="aktivna">{{ status['147.91.200.59:4001'] }}</td>
                 {% else %}
@@ -35,8 +37,8 @@
             </tr>  
             
             <tr class="alt">
-                
-                <td>147.91.200.59:4002</td>
+                <td>Radna stanica 2</td>
+                <td>master4ws.unic.kg.ac.rs:4002</td>
                 {% if status['147.91.200.59:4002']=="aktivna"%}
                 <td id="aktivna">{{ status['147.91.200.59:4002'] }}</td>
                 {% else %}
@@ -45,7 +47,8 @@
             </tr>  
             
             <tr>
-                <td>147.91.200.59:4003</td>
+                <td>Radna stanica 3</td>
+                <td>master4ws.unic.kg.ac.rs:4003</td>
                 {% if status['147.91.200.59:4003']=="aktivna"%}
                 <td id="aktivna">{{ status['147.91.200.59:4003'] }}</td>
                 {% else %}
@@ -54,7 +57,8 @@
             </tr>  
             
             <tr class="alt">
-                <td>147.91.200.59:4004</td>
+                <td>Radna stanica 4</td>
+                <td>master4ws.unic.kg.ac.rs:4004</td>
                 {% if status['147.91.200.59:4004']=="aktivna"%}
                 <td id="aktivna">{{ status['147.91.200.59:4004'] }}</td>
                 {% else %}
@@ -63,7 +67,8 @@
             </tr>  
             
             <tr>
-                <td>147.91.200.59:4005</td>
+                <td>Radna stanica 5</td>
+                <td>master4ws.unic.kg.ac.rs:4005</td>
                 {% if status['147.91.200.59:4005']=="aktivna"%}
                 <td id="aktivna">{{ status['147.91.200.59:4005'] }}</td>
                 {% else %}
@@ -72,7 +77,8 @@
             </tr>  
             
             <tr class="alt">
-                <td>147.91.200.59:4006</td>
+                <td>Radna stanica 6</td>
+                <td>master4ws.unic.kg.ac.rs:4006</td>
                 {% if status['147.91.200.59:4006']=="aktivna"%}
                 <td id="aktivna">{{ status['147.91.200.59:4006'] }}</td>
                 {% else %}
@@ -81,7 +87,8 @@
             </tr>  
             
             <tr>
-                <td>147.91.200.59:4007</td>
+                <td>Radna stanica 7</td>
+                <td>master4ws.unic.kg.ac.rs:4007</td>
                 {% if status['147.91.200.59:4007']=="aktivna"%}
                 <td id="aktivna">{{ status['147.91.200.59:4007'] }}</td>
                 {% else %}
@@ -90,7 +97,8 @@
             </tr>  
             
             <tr class="alt">
-                <td>147.91.200.59:4008</td>
+                <td>Radna stanica 8</td>
+                <td>master4ws.unic.kg.ac.rs:4008</td>
                 {% if status['147.91.200.59:4008']=="aktivna"%}
                 <td id="aktivna">{{ status['147.91.200.59:4008'] }}</td>
                 {% else %}
@@ -99,7 +107,8 @@
             </tr>  
             
             <tr>
-                <td>147.91.200.59:4009</td>
+                <td>Radna stanica 9</td>
+                <td>master4ws.unic.kg.ac.rs:4009</td>
                 {% if status['147.91.200.59:4009']=="aktivna"%}
                 <td id="aktivna">{{ status['147.91.200.59:4009'] }}</td>
                 {% else %}
