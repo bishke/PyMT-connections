@@ -4,34 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="30" />
-    <link rel="stylesheet" type="text/css" media="screen" href="static/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/style.css">
     <title>Monitoring Umetnici</title>
-   
+    <style>
+        #aktivna {background-color: aqua;}
+        #neaktivna {background-color:rgb(255, 76, 6);}
+    </style>
 </head>
 <body>
 
-
-   
-                <table border="1">
-                    <thead>
-                        <tr>
-                           
-                            <th>Naizv</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                        
-                    <tbody>
-                        {% for  i,j in status.items() %}
-                        <tr>
-                          
-                            <td>{{i}}</td>
-                            <td>{{j}}</td>
-                        </tr>  
-                        {% endfor %}                                                
-                    </tbody>
-                        
-                </table>
+    <table id="adrese">
+        <thead>
+            <tr>
+               
+                <th>Naziv</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+            
+        <tbody>
+            
+            <tr>
+              
+                <td>147.91.200.59:4001</td>
+                {% if status['147.91.200.59:4001']=="aktivna"%}
+                <td id="aktivna">{{ status['147.91.200.59:4001'] }}</td>
+                {% else %}
+                <td id="neaktivna">{{ status['147.91.200.59:4001'] }}</td>
+                {% endif %}
+            </tr>  
+            
+            <tr class="alt">
+                
+                <td>147.91.200.59:4002</td>
+                {% if status['147.91.200.59:4002']=="aktivna"%}
+                <td id="aktivna">{{ status['147.91.200.59:4002'] }}</td>
+                {% else %}
+                <td id="neaktivna">{{ status['147.91.200.59:4002'] }}</td>
+                {% endif %}
+            </tr>  
+            
+            <tr>
+                <td>147.91.200.59:4003</td>
+                {% if status['147.91.200.59:4003']=="aktivna"%}
+                <td id="aktivna">{{ status['147.91.200.59:4003'] }}</td>
+                {% else %}
+                <td id="neaktivna">{{ status['147.91.200.59:4003'] }}</td>
+                {% endif %}
+            </tr>  
+            
+            <tr class="alt">
+                <td>147.91.200.59:4004</td>
+                {% if status['147.91.200.59:4004']=="aktivna"%}
+                <td id="aktivna">{{ status['147.91.200.59:4004'] }}</td>
+                {% else %}
+                <td id="neaktivna">{{ status['147.91.200.59:4004'] }}</td>
+                {% endif %}
+            </tr>  
+            
+            <tr>
+                <td>147.91.200.59:4005</td>
+                {% if status['147.91.200.59:4005']=="aktivna"%}
+                <td id="aktivna">{{ status['147.91.200.59:4005'] }}</td>
+                {% else %}
+                <td id="neaktivna">{{ status['147.91.200.59:4005'] }}</td>
+                {% endif %}
+            </tr>  
+            
+            <tr class="alt">
+                <td>147.91.200.59:4006</td>
+                {% if status['147.91.200.59:4006']=="aktivna"%}
+                <td id="aktivna">{{ status['147.91.200.59:4006'] }}</td>
+                {% else %}
+                <td id="neaktivna">{{ status['147.91.200.59:4006'] }}</td>
+                {% endif %}
+            </tr>  
+            
+            <tr>
+                <td>147.91.200.59:4007</td>
+                {% if status['147.91.200.59:4007']=="aktivna"%}
+                <td id="aktivna">{{ status['147.91.200.59:4007'] }}</td>
+                {% else %}
+                <td id="neaktivna">{{ status['147.91.200.59:4007'] }}</td>
+                {% endif %}
+            </tr>  
+            
+            <tr class="alt">
+                <td>147.91.200.59:4008</td>
+                {% if status['147.91.200.59:4008']=="aktivna"%}
+                <td id="aktivna">{{ status['147.91.200.59:4008'] }}</td>
+                {% else %}
+                <td id="neaktivna">{{ status['147.91.200.59:4008'] }}</td>
+                {% endif %}
+            </tr>  
+            
+            <tr>
+                <td>147.91.200.59:4009</td>
+                {% if status['147.91.200.59:4009']=="aktivna"%}
+                <td id="aktivna">{{ status['147.91.200.59:4009'] }}</td>
+                {% else %}
+                <td id="neaktivna">{{ status['147.91.200.59:4009'] }}</td>
+                {% endif %}
+            </tr>  
+                                                            
+        </tbody>
+            
+    </table>
 
 </body>
 
